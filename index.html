@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLW Journey</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,100,0,0" />
+</head>
+
+<body>
+    <div id="app">
+        <form class="formulario">
+            <div class="card-bg" id="place">
+                <span class="material-symbols-rounded">
+                    pin_drop
+                </span>
+                <span>Cocal dos Alves - PI</span>
+            </div>
+            <div class="formulario-campo text">
+                <span class="material-symbols-rounded">
+                    bookmarks
+                </span>
+                <input type="text" placeholder="Qual a atividade?" name="atividade" />
+            </div>
+            <div class="formulario-campo">
+                <span class="material-symbols-rounded">
+                    calendar_today
+                </span>
+                <select name="dia">
+                    <!-- <option value="2024-04-01"> 01 de fevereiro</option> -->
+                </select>
+            </div>
+            <div class="formulario-campo">
+                <span class="material-symbols-rounded">
+                    schedule
+                </span>
+                <select name="hora" id="">
+                    <!-- <option value="04:01">10:43</option> -->
+                </select>
+            </div>
+            <input type="submit" value="Salvar atividade">
+        </form>
+
+        <main>
+            <h1>Atividades</h1>
+            <section>
+                <!-- <div>
+                    <input type="checkbox"/>
+                    <span>Jogar bola na quadra</span>
+                    <time>12:13</time>
+                </div> -->
+            </section>
+        </main>
+    </div>
+</body>
+<script src="assets/app.js" type="module"></script>
+<!-- CDN example (jsDelivr) -->
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+<script>dayjs.locale('pt-br')</script>
+
+</html>

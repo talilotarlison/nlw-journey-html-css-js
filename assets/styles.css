@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+selec,
+button {
+    background-color: rgba(0, 0, 0, 0.953);
+    color: azure;
+    font-family: "Inter", sans-serif;
+
+}
+
+option {
+    background-color: #27272A !important;
+}
+
+#app {
+    margin: 0 auto;
+    max-width: 340px;
+}
+
+option,
+select,
+input[type=text] {
+    all: unset;
+    width: 100%;
+}
+
+input[type=text]::placeholder {
+    color: azure;
+}
+
+.formulario {
+    padding: 20px 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.formulario-campo {
+    border: 1px solid #27272A;
+    padding: 18px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+}
+
+.formulario-campo:focus-within {
+    outline: 1px solid yellowgreen;
+}
+
+input[type=submit] {
+    padding: 18px;
+    margin-top: 8px;
+    background-color: #AFF445;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02px;
+
+    color: #132F00;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    opacity: 0.5;
+}
+
+#place {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    box-shadow:
+        0px 8px 8px rgba(0, 0, 0, 0.1),
+        0px 4px 4px rgba(0, 0, 0, 0.1),
+        0px 2px 2px rgba(0, 0, 0, 0.1),
+        0px 0px 0px 1px rgba(0, 0, 0, 0.1),
+        inset 0px 0px 0px 1px rgba(255, 255, 255, 0.03), inset 0px 1px 0px rgba(255, 255, 255, 0.03);
+}
+
+.card-bg {
+    border: 1px solid #27272A;
+    background: #18181B;
+    padding: 18px;
+    border-radius: 8px;
+
+
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+time {
+    font-size: 15px;
+    color: gray;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+main>section {
+    display: grid;
+    gap: 10px;
+}
+
+.checkbox-round {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #27272A;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px dotted #AFF445 !important;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    width: 1.5em;
+    height: 1.5em;
+    appearance: auto;
+
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color */
+
+    accent-color: #AFF445 !important;
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+
+}
+
+@media (width > 1024px) {
+    #app {
+        display: flex;
+        max-width: 960px;
+        gap: 40px;
+    }
+
+    .formulario {
+        width: 40%;
+        margin-top: 40px;
+    }
+
+    main {
+        margin-top: 20px;
+        flex: 1;
+
+    }
+
+    h1 {
+        text-align: left;
+    }
+}
+
+section .card-bg {
+    animation: appear 300ms;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+}
